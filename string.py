@@ -27,3 +27,14 @@ print(name[-7])
 #slicing
 print(s[5:5])
 print(s[6:])
+#alternate letter printing of a string
+print(s[0:11:2])
+print(s[1:11:3])
+#first step is always greater than the second step in reverse slicing
+print(s[7:0:-1])
+str = "Pranjal"
+# Reverse the string using slicing
+print(str[::-1])
+print(s[:-6:-1])
+#printing only hello in reverse
+print(s[4::-1])
