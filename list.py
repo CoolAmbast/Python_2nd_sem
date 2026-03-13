@@ -1,7 +1,3 @@
-#editing item in a list
-#deleting item from a list
-#operations on list
-#functions on list
 #list comprehension
 #disadvantage of python list
 
@@ -95,5 +91,63 @@ print(l4)
 
 #editing item in a list
 list1 = [1,2,3,4,5]
-list1[3] = 500 #change the value of the item at the given index
+list1[1:4] = [200, 300, 400] #change the value of the item at the given index
 print(list1)
+
+#deleting item from a list
+list2 = [1,2,3,4,5]
+#del statement
+#del list2[1:3] #delete item at the specified index
+#print(list2)
+#remove() function
+#list2.remove(3) #delete the first occurrence of the specified value
+#print(list2)
+#clear() function
+#list2.clear() #delete all items from the list
+#print(list2)
+
+#pop()
+print(list2.pop())
+
+#operations on list
+list3 = [1,2,3,4,5]
+list4 = [6,7,8,9,10]
+#arithematic operations
+print(list3 + list4) #concatenation of two list
+print(list3 * 2) #repetition of list
+
+#membership operations
+print(3 in list3) #check if item is in the list
+print(6 not in list3) #check if item is not in the list
+
+#loop operations
+for i in list3:
+    print(i)
+    
+#list in functions
+  #len()
+  #min()
+  #max()
+  #sorted()
+unsorted = [325,235234,241243,5325,324,235,23,42]
+print(len(unsorted))
+print(min(unsorted))
+print(max(unsorted))
+print(sorted(unsorted))
+print(unsorted)
+
+#count()
+print(unsorted.count(23))
+
+#index()
+print(unsorted.index(23))
+
+#reverse()
+unsorted.reverse()
+print(unsorted)
+print(unsorted)
+
+#sort()
+unsorted.sort()
+print(unsorted)
+print(unsorted)
