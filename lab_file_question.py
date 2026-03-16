@@ -29,11 +29,14 @@ print("Username is:", username)
 '''
 n = int(input("Enter a three-digit number: "))
 sum = 0
-for i in range(3):
-    digit = n % 10
-    sum += digit
-    n //= 10
-print(f"The sum of the digits is: {sum}")
+if len(str(n)) == 3:
+    for i in range(3):
+        digit = n % 10
+        sum += digit
+        n //= 10
+    print(f"The sum of the digits is: {sum}")
+else:
+    print("not a three digit number")
 
 '''
 4. Find palindrome or not. (user input)
@@ -44,3 +47,9 @@ if number == reversed_number:
     print("The number is a palindrome.")
 else:
     print("The number is not a palindrome.")
+'''
+5. Write a program to Count the frequency of a particular character in a provided string.
+'''
+'''
+6. write a program that take a user input of three angles and will find out wheather it is triangle or not
+'''
