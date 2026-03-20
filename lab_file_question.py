@@ -20,9 +20,15 @@ print("Length of the string is:", length)
  extract everything before @ and output it
  the mail id should be user input instead of hard coded
 '''
+#my method
 email = input("Enter your email id: ")
 username = email.split('@')[0]
 print("Username is:", username)
+
+#sir's method
+s= input("enter mail address: ")
+pos = s.index('@')
+print(s[0:pos])
 
 '''
 3. Find the sum of digits of a three-digit number. (user input)
