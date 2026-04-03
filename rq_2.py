@@ -1,5 +1,8 @@
-'''
-a robot move in a plain start from the origin point(0,0),
-the robot can move towards up,down,left and right with given steps.
-take input from user and then find the distance from origin and direction of robot moving
-'''
+#take input from user in int and then reverse the number and print it
+n = int(input("Enter a number: "))
+rev = 0
+while n > 0:
+    last= n % 10
+    rev = rev * 10 + last
+    n = n // 10
+print("Reversed number: ", rev)
