@@ -7,7 +7,7 @@ take input from user and then find the distance from origin and direction of rob
 
 pos = [0,0]
 while True:
-  s = input('Enter the robot path')
+  s = input('Enter the robot path ')
   if s == '!':
     break
   direction = s.split()[0]
@@ -25,4 +25,4 @@ while True:
     pass
 
 print('new pos',pos)
-print((pos[0]**2 + pos[1]*2)*0.5)
+print((pos[0]*2 + pos[1]*2)*0.5)
