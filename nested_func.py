@@ -10,3 +10,4 @@ x = 3
 z = g(x)
 print(x)
 print(z)
+#functions are first class citizens
